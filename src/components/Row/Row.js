@@ -66,7 +66,10 @@ const btnRender = (ev) =>{
     let arr = stateData
     // console.log(stateData.delBtn)
      arr.delBtn = 1
-       if (ev.target.checked === true) { arr.delBtn = 2 }
+     for(let i = 0; i< arr.data.length; i++){
+       // console.log(arr.data[i].select) 
+       if (arr.data[i].select === !ev.target.checked) { arr.delBtn = 2 }
+     }
     //    console.log(stateData.delBtn)    
 }
         

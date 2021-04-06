@@ -14,6 +14,14 @@ const Header = ()=> {
         type: "RE_CHACK",
         payload: arr
        })
+       btnAllRender(event)
+
+    }
+
+    const btnAllRender = (event) =>{
+        let arr = stateData
+         arr.delBtn = 1
+           if (event.target.checked === true) { arr.delBtn = 2 } 
     }
     return(
         <tr className="header">

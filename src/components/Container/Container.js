@@ -10,10 +10,12 @@ const Container = ()=>{
     const deleteRowIfChack = ()=>{
         let res = stateData.data
         let arrToDel = res.filter(ele => ele.select === false) 
+        stateData.delBtn = 1
         dispatchData({
             type: "DELETE_DATA",
             payload: arrToDel
            })
+
      }
 
     const btnColor = ()=>{
