@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Roboto; /* Имя шрифта */
+  src: url(./../src/Fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+ }
+
+ @font-face {
+  font-family: Roboto-Bold; /* Имя шрифта */
+  src: url(./../src/Fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
+ }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

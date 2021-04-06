@@ -1,0 +1,29 @@
+.main{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4c4c4c;
+}
+
+.btndiv{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0;
+    border: 0;
+}
+
+.btndel{
+    transition: 0.2s all linear;
+}
+
+.btndel:hover{
+    background-color: #02597e;
+    color: #fff;
+}
