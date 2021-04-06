@@ -69,16 +69,17 @@ const btnRender = (ev) =>{
        if (arr.data[i].select === !ev.target.checked) { arr.delBtn = 2 }
      }   
 }
+
         
     return(
         <RowTR background={calculateBGColor()}>
-            <td><CheckBox onChange={reChack} checked={elem.select} /></td>
+            <td><label className="divC"><CheckBox className="chackbox" onChange={reChack} checked={elem.select}/><span className="fake"></span></label></td>
             <td>{indexOf}</td>
             <td>{elem.first_name} {elem.last_name}</td>
             <td>{timeConverter()}</td>
             <td>{heightConverter(elem.height)}</td>
             <td>{weightConverter(elem.weight)} кг</td>
-            <td>${elem.salary}</td>
+            <td>€{Math.trunc(elem.salary/stateData.rates)}</td>
             <td><Pencil/></td>
             <td onClick={deleteRow}><Trash/></td>
         </RowTR>

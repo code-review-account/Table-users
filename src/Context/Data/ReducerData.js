@@ -15,6 +15,11 @@ const ReducerData = (state, action) => {
                 ...state,
                 data: action.payload  
             }
+        case "Add_RATES":
+            return {
+                ...state,
+                rates: action.payload  
+            }    
         case "DELETE_DATA":
         return {
             ...state,

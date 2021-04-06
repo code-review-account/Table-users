@@ -8,6 +8,6 @@ height: 18px;
 border-radius: 6px;
 border: solid 2px #e8e8e8;
 background-color: #ffffff;
-margin-left: 20px; 
+display:none;
 `;
 export default CheckBox

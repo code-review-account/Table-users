@@ -25,7 +25,7 @@ const Header = ()=> {
     }
     return(
         <tr className="header">
-            <td><CheckBox onChange={selectAll}/></td>
+            <td><label className="divC"><CheckBox className="chackbox" onChange={selectAll}/><span className="fake"></span></label></td>
             <td>№</td>
             <td>ФИО</td>
             <td>Возраст (Лет)</td>

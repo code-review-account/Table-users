@@ -26,8 +26,25 @@ const Table = ()=>{
           console.log(e)
         }
       }
+
+      const fetchRates = async () => {
+        try {
+          const response = await fetch(NET.RATES_URL)
+          if (response.status === 200) {
+            const rates = await response.json()
+            dispatchData({
+              type: "Add_RATES",
+              payload: rates.rates.USD
+             })
+          }
+        } catch (e) {
+          console.log(e)
+        }
+      }
+      fetchRates()
       fetchData()
     }, [])
+
     if (!users) {return null}
     return(        
       <table className='users'>
